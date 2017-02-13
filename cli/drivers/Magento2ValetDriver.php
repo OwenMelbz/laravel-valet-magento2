@@ -1,6 +1,6 @@
 <?php
 
-class MagentoValetDriver extends ValetDriver
+class Magento2ValetDriver extends ValetDriver
 {
 
     /**
