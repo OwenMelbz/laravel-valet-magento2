@@ -32,7 +32,7 @@ class Magento2ValetDriver extends ValetDriver
         }
 
         if (strpos($uri, '/static/') === 0) {
-            $_GET['resource'] = preg_replace('#static/#', '', $uri, 1);
+            $_GET['resource'] = substr($uri, strpos($uri, '/', 1) );
             include($sitePath.DIRECTORY_SEPARATOR.'pub/static.php');
             exit;
         }
